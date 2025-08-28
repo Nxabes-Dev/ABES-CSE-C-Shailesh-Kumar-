@@ -1,0 +1,3 @@
+difference between home and index.
+home is a static page normal html+css or bootstrap
+index it is  a dynamic page with functional js,database connection
