@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment 2</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        #logo {
+            border-radius: 90%;
+        }
+
+        #title {
+            text-align: center;
+        }
+
+        #welc {}
+
+        #card1 {
+            height: 500px;
+            width: 500px;
+            border: solid 1px blue;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 60px; background-color: rgb(255, 0, 106);">
+
+        <table>
+            <th><img src="logo-search-grid-1x.png" alt="undef" height="50px" width="50px" id="logo"></th>
+            <center>
+                <th id="title">Bus Seat Book</th>
+            </center>
+
+        </table>
+
+    </div>
+    <div>
+        <center>
+            <h3 id:"welc">Welcome to Bus Booking System</h3>
+        </center>
+
+    </div>
+    <!-- <div id="card1">
+        <table>
+            <tr>
+                <th>User Details</th>            
+            </tr>
+            <tr>
+                <td>User name :</td>
+                <td><input type="text"></td>
+            </tr>
+             <tr>
+                <td>User password :</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>User Gender
+                    <input type="radio" name="" id="g1">
+                <label for="">Male</label>
+            </td>
+           
+
+            </tr>
+            <tr>
+                 <td> <input type="radio" name="" id="g1">
+                    <label for="">Female</label></td>
+            </tr>
+            
+            
+            
+        </table>
+
+    </div> -->
+    <div id="card1">
+        <table>
+            <tr>
+                <th colspan="2">User Details</th>
+            </tr>
+            <tr>
+                <td>User name :</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>User password :</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>User Gender :</td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>User Select City</td>
+                <td><select name="city" id="">
+                        <option value="" disabled selected>select</option>
+                        <option value="">Ghaziabad</option>
+                        <option value="">Ghazipur</option>
+                        <option value="">Ghaziabad</option>
+                        <option value="">Hapur</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="booking.html"><button>Seat Book</button></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
