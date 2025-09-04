@@ -19,12 +19,28 @@
 
         #welc {}
 
-        #card1 {
+        #box {
             height: 500px;
             width: 500px;
             border: solid 1px blue;
             margin: 0 auto;
         }
+
+        #box{
+            display: flex;
+        }
+        #card1{
+            width: 50%;
+            padding: 10px;
+        }
+        img{
+            width: 50%;
+            padding: 10px;
+            height: 150px;
+            border-radius: 50px;
+
+        }
+        
     </style>
 </head>
 
@@ -77,9 +93,10 @@
         </table>
 
     </div> -->
-    <div id="card1">
-        <table>
+    <div id="box">
+        <div id="card1">
             <tr>
+        <table>
                 <th colspan="2">User Details</th>
             </tr>
             <tr>
@@ -117,7 +134,12 @@
                 </td>
             </tr>
         </table>
+        </div>
+        <img src="buslogo.jpg" alt="">
     </div>
+
+    
+
 
 </body>
 
