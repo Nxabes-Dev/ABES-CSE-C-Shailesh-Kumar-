@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Style Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2874f0;
+    }
+
+    .logo span {
+      font-size: 12px;
+      color: orange;
+    }
+
+    .search-box input {
+      padding: 8px 20px;
+      width: 300px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      margin-left: 30vw;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cart {
+      position: relative;
+    }
+
+    .cart span {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      border-radius: 50%;
+      padding: 2px 6px;
+    }
+
+    /* Categories row */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 20px;
+      padding: 20px 30px;
+      align-items: center;
+      text-align: center;
+      background-color: white;
+    }
+
+    .category-item img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-bottom: 5px;
+    }
+
+    .category-item {
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-left">
+      <div class="logo">
+        Flipkart
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search for Products, Brands and More">
+      </div>
+    </div>
+    <div class="navbar-right">
+      <div class="user">user</div>
+      <div class="cart">Cart <span>7</span></div>
+      <div class="seller"> Become a Seller</div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="category-item">
+        .
+      <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_minutes_desktop-bc73ae.svg" alt="">
+      <div>Minutes</div>
+    </div>
+    <div class="category-item">
+      <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt="">
+      <div>Mobiles & Tablets</div>
+    </div>
+    <div class="category-item">
+     <img src="https://rukminim2.flixcart.com/www/160/40/promos/24/07/2025/556d6823-2aaa-4129-9cb4-ae9d4fd348cd.png?q=60" alt="grocery">
+      <div>grocery</div>
+    </div>
+  </div>
+
+</body>
+</html>
