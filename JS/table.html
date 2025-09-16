@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table with Odd & Even Separation</title>
+</head>
+<body>
+    <h2>Multiplication Tables with Odd & Even Numbers</h2>
+    <div id="output"></div>
+
+    <script>
+        function printTablesAndSeparate(num1, num2, limit = 10) {
+            let oddNumbers = [];
+            let evenNumbers = [];
+            let output = "";
+
+            // Table for first number
+            output += `<h3>Table of ${num1}:</h3>`;
+            for (let i = 1; i <= limit; i++) {
+                let result = num1 * i;
+                output += `${num1} x ${i} = ${result}<br>`;
+                if (result % 2 === 0) {
+                    evenNumbers.push(result);
+                } else {
+                    oddNumbers.push(result);
+                }
+            }
+
+            // Table for second number
+            output += `<h3>Table of ${num2}:</h3>`;
+            for (let i = 1; i <= limit; i++) {
+                let result = num2 * i;
+                output += `${num2} x ${i} = ${result}<br>`;
+                if (result % 2 === 0) {
+                    evenNumbers.push(result);
+                } else {
+                    oddNumbers.push(result);
+                }
+            }
+
+            // Show Odd and Even numbers
+            output += `<h3>Even Numbers:</h3> ${evenNumbers.join(", ")}<br>`;
+            output += `<h3>Odd Numbers:</h3> ${oddNumbers.join(", ")}`;
+
+            // Print in HTML page
+            document.getElementById("output").innerHTML = output;
+        }
+
+        // Example usage
+        printTablesAndSeparate(3, 5);
+    </script>
+</body>
+</html>

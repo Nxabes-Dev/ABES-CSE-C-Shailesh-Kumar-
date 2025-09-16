@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav{
+            background-color: beige;
+            display: flex;
+        }
+        #container{
+            height: 300px;
+            width: 300px;
+            border: 4px solid black;
+            margin: auto;
+        }
+        #lo{
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+        }
+        #cname{
+            font-weight: bold;
+            align-content: center;
+        }
+        #plus{
+            display: flex;
+            justify-content: space-between;
+            padding: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+        <div id="logo"><img id="lo"; src="https://imgs.search.brave.com/bE6ApTzccrsM_IBnsCLNL69Zn3NmUbN3vNEBU22ZMcY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODc2/OTgxNjg0L3ZlY3Rv/ci9jbG9jay5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Q0Yt/YXFpNlNUVTZDLUNf/WDd6Z2NhMWZMV3pn/bWRLaEpJUjJrVzFK/WkV0Zz0" alt="error"></div>
+        <div id="cname">Counter App</div>
+        </div>
+        <br>
+        <center>
+            <div>Display</div>
+        </center>
+        <div id="plus">
+            <p id="time">0</p>
+        <div><button>+</button></div>
+        <div><button>-</button></div>
+        </div>
+        
+
+
+    </div>
+    <script>
+        var a
+        function add(){
+
+            
+        }
+        function counter(){
+
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #nav {
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #container {
+            height: 300px;
+            width: 300px;
+            border: 4px solid black;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #lo {
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            margin-right: 10px;
+        }
+
+        #cname {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #display {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+
+        #plus {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="logo">
+                <img id="lo" src="https://imgs.search.brave.com/bE6ApTzccrsM_IBnsCLNL69Zn3NmUbN3vNEBU22ZMcY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODc2/OTgxNjg0L3ZlY3Rv/ci9jbG9jay5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Q0Yt/YXFpNlNUVTZDLUNf/WDd6Z2NhMWZMV3pn/bWRLaEpJUjJrVzFK/WkV0Zz0" alt="error">
+            </div>
+            <div id="cname">Counter App</div>
+        </div>
+
+        <div id="display">
+            <p id="time">0</p>
+        </div>
+
+        <div id="plus">
+            <div><button id="increment">+</button></div>
+            <div><button id="decrement">-</button></div>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+        const display = document.getElementById("time");
+        const incBtn = document.getElementById("increment");
+        const decBtn = document.getElementById("decrement");
+
+        incBtn.addEventListener("click", () => {
+            count++;
+            display.textContent = count;
+        });
+
+        decBtn.addEventListener("click", () => {
+            count--;
+            display.textContent = count;
+        });
+    </script>
+</body>
+</html>

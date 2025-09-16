@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <img id="chng" src="samosa.jpg" alt="">
+    <button onclick="">change</button>
+    <script>
+       function chn() {
+            var image = document.getElementById("chng");
+
+            // You can toggle between two images:
+            if (image.src.includes("samosa.jpg")) {
+                image.src = "pizza.jpg"; // change to a new image
+            } else {
+                image.src = "samosa.jpg"; // change back
+            }
+        }
+            
+        
+    </script>
+</body>
+</html>
