@@ -1,0 +1,92 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //call back
+        // function sum(a, b) {
+        //     console.log(a + b);
+        // }
+        // function cal(a, b, sumcallback) {
+        //     sumcallback(a, b);
+        // }
+        // cal(10, 20, sum);
+
+        //kuch new h
+        // function getData(dataid) {
+        //     setTimeout(() => { console.log("data", dataid); }, 2000);
+        // }
+        //nested callback
+        function getData(dataid) {
+            setTimeout(() => { console.log("data", dataid); }, 2000);
+        }
+        getData(1,()=>{
+            getData(2,()=>{ 
+                getData(3,()=>{
+                    getData(4);
+                });
+            });
+        });
+
+        getData(1);
+        getData(2);
+        getData(3);
+
+    </script>
+</body>
+
+</html> -->
+
+//
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function getD(dataid, nextdata) {
+
+            setTimeout(() => {
+                console.log("data", dataid);
+                if (nextdata) {
+                    nextdata();
+                }
+            }, 2000);
+
+        }
+        getD(1, () => {
+            getD(11, () => {
+                getD(111, () => {
+                    getD(1111, () => {
+
+                    });
+                });
+            });
+        });
+
+
+        function sum(a, b) {
+            console.log(a + b);
+        }
+        function call(a, b, sumcallback) {
+            sumcallback(a, b);
+        }
+        call(10, 20, sum);
+    </script>
+
+</body>
+
+</html>
